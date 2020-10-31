@@ -51,5 +51,7 @@ def main():
     feature_vector_X = [data[vec][0] for vec in range(len(data))]
     data_labels_y = [data[label][1] for label in range(len(data))]
 
+    X_train, X_test, y_train, y_test = train_test_split(feature_vector_X, data_labels_y, random_state=0)
+
 if __name__ == "__main__":
     main()
